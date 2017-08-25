@@ -1,4 +1,6 @@
-timecodecalc initial release v1.1a (2/13/2009) by The Lightning Stalker
+# timecodecalc
+Initial release v1.1a (2/13/2009) by The Lightning Stalker (SourceForge)
+8/25/2017 Create git repository
 
 This will take a CellTimes.txt file and output an NTSC-ND timecode for each
 "Cell Time" for programs such as Scenarist.
@@ -14,7 +16,7 @@ BTW, this is my first C program.  Not bad, eh?
 
 
 
-BUILD INSTRUCTIONS:
+## Build Instructions
 	Linux:
 	Simply execute "make" in the source directory
 
@@ -22,7 +24,7 @@ BUILD INSTRUCTIONS:
 	Either use the precompiled timecodecalc.exe binary or install mingw
 		and msys and build with the above Linux instructions.
 
-INSTALL INSTRUCTIONS:
+## Install Instructions
 	Linux:
 	Copy the timecodecalc binary to /usr/local/bin or wherever you feel
 		it should go.
@@ -45,7 +47,7 @@ One, and only one, of the following is required:-
       --n2f                convert non-drop timecodes to frame numbers
       --nondrop2frames     ...
 
-Examples:
+## Examples
   timecodecalc -r30 -f2n CellTimes.txt
       Read frame numbers from CellTimes.txt and output non-drop timecodes to
       standard output based on a 30 frames per second model. (NTSC)
@@ -57,7 +59,7 @@ Examples:
 
 
 
-List of programs and the time code formats they are known to use:
+### List of programs and the time code formats they are known to use
 
 Program              Format(s) Used
 -----------------------------------
@@ -69,13 +71,8 @@ VirtualDub           Multiple
 
 
 
-Version History:
+## Version History
 v1.1 - Implemented reverse conversion of non-drop timecodes to frame numbers
        Minor bug (feature) fix
 
 v1.0 - Initial release
-
-
-
-If anyone wants to help me out, you can contact me through my website:
-http://kickme.to/lightningstalker
