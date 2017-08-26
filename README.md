@@ -48,11 +48,11 @@ One, and only one, of the following is required:-
       --nondrop2frames     ...
 
 ## Examples
-  timecodecalc -r30 -f2n CellTimes.txt
+  timecodecalc -r30 --f2n CellTimes.txt
       Read frame numbers from CellTimes.txt and output non-drop timecodes to
       standard output based on a 30 frames per second model. (NTSC)
 
-  timecodecalc -r25 -n2f CellTimes.txt SceneTimes.txt
+  timecodecalc -r25 --n2f SceneTimes.txt CellTimes.txt
       Read non-drop timecodes from a file named CellTimes.txt, and output
       frame numbers to a file named SceneTimes.txt based on a 25FPS model.
       (PAL)
