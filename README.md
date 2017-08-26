@@ -1,5 +1,6 @@
 # timecodecalc
-Initial release v1.1a (2/13/2009) by The Lightning Stalker (SourceForge)
+Initial release v1.1a (2/13/2009) by The Lightning Stalker ([SourceForge](https://sourceforge.net/projects/timecodecalc/))
+
 8/25/2017 Create git repository
 
 This will take a `CellTimes.txt` file and output an NTSC-ND timecode for each
@@ -35,10 +36,12 @@ BTW, this is my first C program.  Not bad, eh?
 
 
 Usage: `timecodecalc OPTIONS [INFILE] [OUTFILE]...`
+
 Convert movie time position information from one format to another, as read
 from INFILE, and send the results to OUTFILE, or standard output.
+#### Options
 
-  -r, --framerate=FPS      frames per second, required
+      -r, --framerate=FPS      frames per second, required
 
 One, and only one, of the following is required:-
 
@@ -49,25 +52,27 @@ One, and only one, of the following is required:-
 
 ## Examples
   `timecodecalc -r30 --f2n CellTimes.txt`
-      Read frame numbers from `CellTimes.txt` and output non-drop timecodes to
-      standard output based on a 30 frames per second model. (NTSC)
+  
+  Read frame numbers from `CellTimes.txt` and output non-drop timecodes to
+  standard output based on a 30 frames per second model. (NTSC)
 
   `timecodecalc -r25 --n2f SceneTimes.txt CellTimes.txt`
-  		Read non-drop timecodes from a file named `CellTimes.txt`, and output
-      frame numbers to a file named `SceneTimes.txt` based on a 25FPS model.
-      (PAL)
+  
+  Read non-drop timecodes from a file named `CellTimes.txt`, and output
+  frame numbers to a file named `SceneTimes.txt` based on a 25FPS model.
+  (PAL)
 
 
 
 ### List of programs and the time code formats they are known to use
 
-Program              Format(s) Used
------------------------------------
-Sonic Scenarist      NTSC-ND
-IfoEdit              Frame Number
-Mpeg2Schnitt         Frame Number
-VideoReDo            NTSC-ND
-VirtualDub           Multiple
+	Program              Format(s) Used
+	-----------------------------------
+	Sonic Scenarist      NTSC-ND
+	IfoEdit              Frame Number
+	Mpeg2Schnitt         Frame Number
+	VideoReDo            NTSC-ND
+	VirtualDub           Multiple
 
 
 
